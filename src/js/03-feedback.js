@@ -34,7 +34,6 @@ fillForm();
 function fillForm() {
   const textSave = JSON.parse(localStorage.getItem(boxStorage));
   console.log(textSave);
-
   if (textSave) {
     feedbackFormInput.value = textSave.email;
     feedbackFormText.value = textSave.message;
